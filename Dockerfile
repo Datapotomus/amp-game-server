@@ -2,6 +2,8 @@ FROM ubuntu:18.04
 
 EXPOSE 8080
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 ENV password=changeme1
 
 
