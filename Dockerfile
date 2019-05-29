@@ -12,7 +12,7 @@ RUN useradd -d /home/AMP -m AMP -s /bin/bash
 #    echo "AMP:${password}" | chpasswd
 
 RUN apt-get update && \
-    apt-get install -y \
+    apt-get install -y --no-install-recommends apt-utils \
         software-properties-common \
         dirmngr \
         apt-transport-https
